@@ -1,0 +1,14 @@
+# Ignore swap and session files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+plugin/
+site/
+undodir/
+
+log/
+.history
+
+venv/
