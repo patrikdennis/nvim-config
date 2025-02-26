@@ -1,7 +1,7 @@
 
 
 function ColorMyPencils(color)
-	color = color or "vitesse" 
+	color = color or "rose-pine" 
 	vim.cmd.colorscheme(color)
 
 

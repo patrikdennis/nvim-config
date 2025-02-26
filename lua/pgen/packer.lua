@@ -17,10 +17,11 @@ use 'm4xshen/autoclose.nvim'
 use 'nvim-tree/nvim-web-devicons'
 
 use {
-  "2nthony/vitesse.nvim",
-  requires = {
-    "tjdevries/colorbuddy.nvim"
-  }
+  "rose-pine/neovim",
+  as = 'rose-pine',
+  config = function()
+      vim.cmd('colorscheme rose-pine')
+  end
 }
 
 use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
