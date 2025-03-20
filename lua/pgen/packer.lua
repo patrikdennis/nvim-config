@@ -17,10 +17,16 @@ use 'm4xshen/autoclose.nvim'
 use 'nvim-tree/nvim-web-devicons'
 
 use {
-  "rose-pine/neovim",
-  as = 'rose-pine',
+    "savq/melange-nvim",
+  --"rose-pine/neovim",
+ --'f4z3r/gruvbox-material.nvim',
+ -- 'sainnhe/everforest',
+  --as = 'gruvbox-material',
+ -- as = 'rose-pine',
+    as = 'melage',
   config = function()
-      vim.cmd('colorscheme rose-pine')
+     vim.cmd('colorscheme melange')
+     --vim.cmd('colorscheme gruvbox-material')
   end
 }
 
