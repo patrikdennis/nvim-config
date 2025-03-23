@@ -1,7 +1,7 @@
 
 
 function ColorMyPencils(color)
-	color = color or "melange" 
+	color = color or "tokyonight-night" 
     --color = color or "gruvbox-material"
 	vim.cmd.colorscheme(color)
 

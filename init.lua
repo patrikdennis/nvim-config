@@ -1,2 +1,2 @@
-require("pgen")
-print("I use neovim btw")
+require("config")
+print("REEEEEV UP THOSE FRYERS")
