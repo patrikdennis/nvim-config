@@ -16,7 +16,7 @@ vim.diagnostic.config({
     spacing = 10,
   },
   signs = true,
-  underline = true,
+  underline = false,
   update_in_insert = false,
 })
 

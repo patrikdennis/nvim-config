@@ -17,19 +17,26 @@ use 'm4xshen/autoclose.nvim'
 use 'nvim-tree/nvim-web-devicons'
 
 use {
+  "loctvl842/monokai-pro.nvim",
+  as = 'monokai-pro',
+  config = function()
+    require("monokai-pro").setup()
+  end
+}
+--use {
   --  "savq/melange-nvim",
-    "folke/tokyonight.nvim",
+  --  "folke/tokyonight.nvim",
   --"rose-pine/neovim",
  --'f4z3r/gruvbox-material.nvim',
  -- 'sainnhe/everforest',
   --as = 'gruvbox-material',
  -- as = 'rose-pine',
-    as = 'tokyonight',
-  config = function()
-     vim.cmd('colorscheme tokyonight-night')
+--    as = 'tokyonight',
+--  config = function()
+--     vim.cmd('colorscheme tokyonight-night')
      --vim.cmd('colorscheme gruvbox-material')
-  end
-}
+--  end
+--}
 
 
 

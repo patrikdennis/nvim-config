@@ -139,6 +139,12 @@ _G.packer_plugins = {
     path = "/Users/patrik/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["monokai-pro"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\16monokai-pro\frequire\0" },
+    loaded = true,
+    path = "/Users/patrik/.local/share/nvim/site/pack/packer/start/monokai-pro",
+    url = "https://github.com/loctvl842/monokai-pro.nvim"
+  },
   ["neo-tree.nvim"] = {
     loaded = true,
     path = "/Users/patrik/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
@@ -192,18 +198,6 @@ _G.packer_plugins = {
     path = "/Users/patrik/.local/share/nvim/site/pack/packer/opt/todo-comments.nvim",
     url = "https://github.com/folke/todo-comments.nvim"
   },
-  tokyonight = {
-    config = { "\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme tokyonight-night\bcmd\bvim\0" },
-    loaded = true,
-    path = "/Users/patrik/.local/share/nvim/site/pack/packer/start/tokyonight",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
-  ["trouble.nvim"] = {
-    config = { "\27LJ\2\nˆ\a\0\0\6\0\25\00076\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\a\0'\4\b\0005\5\t\0B\0\5\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\n\0'\4\v\0005\5\f\0B\0\5\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\r\0'\4\14\0005\5\15\0B\0\5\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\16\0'\4\17\0005\5\18\0B\0\5\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\19\0'\4\20\0005\5\21\0B\0\5\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\22\0'\4\23\0005\5\24\0B\0\5\1K\0\1\0\1\0\3\tdesc\28Quickfix List (Trouble)\fnoremap\2\vsilent\2#<cmd>Trouble qflist toggle<cr>\15<leader>xQ\1\0\3\tdesc\28Location List (Trouble)\fnoremap\2\vsilent\2$<cmd>Trouble loclist toggle<cr>\15<leader>xL\1\0\3\tdesc1LSP Definitions / references / ... (Trouble)\fnoremap\2\vsilent\2?<cmd>Trouble lsp toggle focus=false win.position=right<cr>\15<leader>cl\1\0\3\tdesc\22Symbols (Trouble)\fnoremap\2\vsilent\0020<cmd>Trouble symbols toggle focus=false<cr>\15<leader>cs\1\0\3\tdesc!Buffer Diagnostics (Trouble)\fnoremap\2\vsilent\0025<cmd>Trouble diagnostics toggle filter.buf=0<cr>\15<leader>xX\1\0\3\tdesc\26Diagnostics (Trouble)\fnoremap\2\vsilent\2(<cmd>Trouble diagnostics toggle<cr>\15<leader>xx\6n\20nvim_set_keymap\bapi\bvim\nsetup\ftrouble\frequire\0" },
-    loaded = true,
-    path = "/Users/patrik/.local/share/nvim/site/pack/packer/start/trouble.nvim",
-    url = "https://github.com/folke/trouble.nvim"
-  },
   undotree = {
     loaded = true,
     path = "/Users/patrik/.local/share/nvim/site/pack/packer/start/undotree",
@@ -217,14 +211,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: trouble.nvim
-time([[Config for trouble.nvim]], true)
-try_loadstring("\27LJ\2\nˆ\a\0\0\6\0\25\00076\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\a\0'\4\b\0005\5\t\0B\0\5\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\n\0'\4\v\0005\5\f\0B\0\5\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\r\0'\4\14\0005\5\15\0B\0\5\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\16\0'\4\17\0005\5\18\0B\0\5\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\19\0'\4\20\0005\5\21\0B\0\5\0016\0\3\0009\0\4\0009\0\5\0'\2\6\0'\3\22\0'\4\23\0005\5\24\0B\0\5\1K\0\1\0\1\0\3\tdesc\28Quickfix List (Trouble)\fnoremap\2\vsilent\2#<cmd>Trouble qflist toggle<cr>\15<leader>xQ\1\0\3\tdesc\28Location List (Trouble)\fnoremap\2\vsilent\2$<cmd>Trouble loclist toggle<cr>\15<leader>xL\1\0\3\tdesc1LSP Definitions / references / ... (Trouble)\fnoremap\2\vsilent\2?<cmd>Trouble lsp toggle focus=false win.position=right<cr>\15<leader>cl\1\0\3\tdesc\22Symbols (Trouble)\fnoremap\2\vsilent\0020<cmd>Trouble symbols toggle focus=false<cr>\15<leader>cs\1\0\3\tdesc!Buffer Diagnostics (Trouble)\fnoremap\2\vsilent\0025<cmd>Trouble diagnostics toggle filter.buf=0<cr>\15<leader>xX\1\0\3\tdesc\26Diagnostics (Trouble)\fnoremap\2\vsilent\2(<cmd>Trouble diagnostics toggle<cr>\15<leader>xx\6n\20nvim_set_keymap\bapi\bvim\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
-time([[Config for trouble.nvim]], false)
--- Config for: tokyonight
-time([[Config for tokyonight]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme tokyonight-night\bcmd\bvim\0", "config", "tokyonight")
-time([[Config for tokyonight]], false)
+-- Config for: monokai-pro
+time([[Config for monokai-pro]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\16monokai-pro\frequire\0", "config", "monokai-pro")
+time([[Config for monokai-pro]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
